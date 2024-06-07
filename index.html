@@ -11,45 +11,59 @@
   gtag('config', 'UA-180076082-1');
 </script>
 
-  <title>Refactoring Lab</title>
+  <title>Self-Affirmed Refactoring Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 2500px}
-
-    /* Set gray background color and 100% height */
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1700px}
+	
+	/* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
     }
-
-    /* Set black background color, white text and some padding */
+	
+    /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+      background-color: #f2f2f2;
+      padding: 25px;
     }
-
-    /* On small screens, set height to 'auto' for sidenav and grid */
+    
+  .carousel-inner img {
+      width: 50%; /* Set width to 100% */
+      margin: auto;
+      min-height:50px;
+  }
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+	 /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
       .row.content {height:auto;}
-    }
+	
+ 
+  }
+
   </style>
 </head>
 <body>
@@ -60,99 +74,183 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
+      <a class="navbar-brand" href="#"></a>
     </div>
-<div class="collapse navbar-collapse" id="myNavbar">
+	<div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href=""></a></li>
-        <li class="active"><a href=""></a></li>
+        <li class="active"><a href="index.html">Core Research</a></li>
+        <li class="active"><a href="https://smilevo.github.io/self-affirmed-refactoring/">Other Research</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container-fluid text-center">
-  <div class="row content">
 
-   <div class="col-sm-2 sidenav">
-     <h3>Artifacts</h3>
-     <div class="well">
-        <p></p>
-       <p><a href="./Data/Assignment.pdf">Assignment</a></p>
-    </div>
-	<div class="well">
-        <p></p>
-      <p><a href="./Data/StatisticalTest.ipynb">Statistical Tests</a></p>
-    </div>
-	<div>
-        <p></p>
-    </div>
-    </div>
+ <div id="sidebar" class="left">
+		
+		
+       <div id="main" class="right">
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
 
+    <div class="carousel-inner" role="listbox">
 
-    <div class="col-sm-8 text-left">
-      <h1> Automating Source Code Refactoring in the Classroom</h1>
-      <hr>
-      <p>Refactoring is the practice of improving software quality without
-altering its external behavior. Developers intuitively refactor their
-code for multiple purposes, such as improving program comprehen-
-sion, reducing code complexity, dealing with technical debt, and
-removing code smells. However, no prior studies have exposed the
-students to an experience of the process of antipatterns detection
-and refactoring correction, and provided students with toolset to
-practice it. To understand and increase the awareness of refactor-
-ing concepts, in this paper, we aim to reflect on our experience
-with teaching refactoring and how it helps students become more
-aware of bad programming practices and the importance of cor-
-recting them via refactoring. This paper discusses the results of
-an experiment in the classroom that involved carrying out various
-refactoring activities for the purpose of removing antipatterns using
-JDeodorant, an Eclipse plugin that supports antipatterns detection
-and refactoring. The results of the qualitative analysis with 171
-students show that students tend to appreciate the idea of learning
-refactoring and are satisfied with various aspects of the JDeodorant
-plugin’s operation. Through this experiment, refactoring can turn
-into a vital part of the computing educational plan. We envision our
-findings enabling educators to support students with refactoring
-tools tuned towards safer and trustworthy refactoring.</p>
-</br>
-<div class="videos-container">
-                <h3 style="text-decoration: underline">How to use JDeodorant?</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Let7xQtb_hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div></br>
-<hr>
-<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="panel panel-danger">
-        <div class="panel-heading"> JDeodorant in action showing the identified Feature Envy bad smell and the recommended Move Method refactoring.</div>
-        <div class="panel-body"><img src="./Images/JD.png" class="img-responsive" style="width:95%" alt="Image"></div>
-        <div class="panel-footer"></div>
+      <div class="item active">
+        <img src="./Images/SAR.PNG" height="200" width="200" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
       </div>
-    </div>
-  </div>
-</div>
-<hr>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="panel panel-danger">
-        <div class="panel-heading">The list of open-source projects used in the
-assignment.</div>
-        <div class="panel-body"><img src="./Images/Project.png" class="img-responsive" style="width:95%" alt="Image"></div>
-        <div class="panel-footer"></div>
+
+      <div class="item">
+        <img src="./Images/phd.jpg" height="400" width="400" alt="Image">
+        <div class="carousel-caption">
+          <h3>PhD defended!</h3>
+          <p>Congratulations Dr. Eman Abdullah AlOmar for successfully defending your Ph.D. thesis! Her work on understanding developers' perception of refactoring has been published in several venues (ICSE, FSE, ESEM, JSS, IST, ESWA...). You’ve worked hard, come far, and finally PHinisheD! You made everyone proud of you!</p>
+        </div>      
       </div>
+
+      <div class="item">
+        <img src="./Images/msr22_02.jpg" height="400" width="400" alt="Image">
+        <div class="carousel-caption">
+          <h3>MSR 2022</h3>
+          <p>Eman presenting her MSR technical paper about review of refactored code</p>
+        </div>      
+      </div>
+
+      <div class="item">
+      <img src="./Images/msr22_01.jpg" height="400" width="400" alt="Image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>MSR 2022</h5>
+          <p>4 (+1 missing) authors, 4 countries, 4 universities, 1 spiRIT. We got the Mining Challenge best paper award!</p>
+        </div>
     </div>
+
+
   </div>
+
+
+   
+
 </div>
-<hr>
+
     
-  </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
+
+
+<!-- Sidebar 
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b></b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens 
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Welcome to the Computing Education Research Webpage!</h1>
+      <p><strong>Our mission is to advance the field of computing education through innovative research, collaboration, and dissemination of knowledge. Here, you will find a wealth of resources, including our latest research findings, educational tools, and information about ongoing projects. We are dedicated to exploring effective teaching methodologies, understanding student learning processes, and developing technologies that enhance the educational experience. Whether you are a researcher, educator, student, or simply interested in the field of computing education, we invite you to explore our work, engage with our community, and contribute to the collective effort of shaping the future of computing education.</p>
+      <p>This website contains all the research related to <strong>SAR</strong>. You will find all papers, artifacts, datasets, and scripts we publicly share for replication and extension. If you have questions, please email us at ealomar@stevens.edu or mwmvse@rit.edu</p>
+      <p>Feel free to visit our other <a href="https://smilevo.github.io/self-affirmed-refactoring/index2.html"  style="color:blue;">research</a> or projects: <a href="https://mkaouer.net/project/" target="_blank">https://mkaouer.net/project/</a></p>
+    
+      </div>
+  </div>
+<hr>
+
+ <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">On the Use of Static Analysis to Engage Students with Software
+Quality Improvement: An Experience with PMD</h1>
+	  <p><strong><em>Published at International Conference on Software Engineering (ICSE'2023) </em></strong><a href="./Preprint/ICSE23-preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://ieeexplore.ieee.org/document/10172545"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+        <p>To increase the awareness of potential coding issues that violate
+coding standards, in this paper, we aim to reflect on our
+experience with teaching the use of static analysis for the purpose
+of evaluating its effectiveness in helping students with respect to
+improving software quality. This paper discusses the results of
+an experiment in the classroom, over a period of 3 academic
+semesters, involving 65 submissions that carried out code review
+activity of 690 rules using PMD</p>
+<p>In particular, we addressed the following research questions:</p>
+<p><strong>RQ1.</strong> What problems are typically perceived by students as true
+positives versus false positives?</p>
+<p><strong>RQ2.</strong> What category of problems typically takes longer to be
+fixed?</p>
+<p><strong>RQ3.</strong> What is the perceived usefulness of PMD?</p>
+	  <p>The dataset utilized in this study is available for download <a href="./Data/PMD.pdf"  style="color:blue;">here.</a></p>
+    </div>
+  </div><hr>
+
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./SIGCSE2024.html">Automating Source Code Refactoring in the Classroom</a></h1>
+	  <p><strong><em>Published at the Proceedings of the 55th ACM Technical Symposium on Computer Science Education  (SIGCSE'2024) </em></strong><a href="./Preprint/SIGCSE24-preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://dl.acm.org/doi/abs/10.1145/3626252.3630787"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+      <p>Refactoring is the practice of improving software quality without altering its external behavior. Developers intuitively refactor their code for multiple purposes, such as improving program comprehension, reducing code complexity, dealing with technical debt, and removing code smells. However, no prior studies have exposed the students to an experience of the process of antipattern detection and refactoring correction and provided students with the toolset to practice it. To understand and increase the awareness of refactoring concepts, in this paper, we aim to reflect on our experience with teaching refactoring and how it helps students become more aware of bad programming practices and the importance of correcting them via refactoring. This paper discusses the results of an experiment in the classroom that involved carrying out various refactoring activities for the purpose of removing antipatterns using JDeodorant, an Eclipse plugin that supports antipatterns detection and refactoring. The results of the qualitative analysis with 171 students show that students tend to appreciate the idea of learning refactoring and are satisfied with various aspects of the JDeodorant plugin’s operation. Through this experiment, refactoring can turn into a vital part of the computing educational plan. We envision our findings enabling educators to support students with refactoring tools tuned towards safer and trustworthy refactoring.</p>
+<p>The dataset utilized in this study is available for download <a href="./SIGCSE2024.html"  style="color:blue;">here.</a></p>
+    </div>
+  </div>
+<hr>
+
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./CSEET2024.html">Cultivating Software Quality Improvement in the
+Classroom: An Experience with ChatGPT</a></h1>
+	  <p><strong><em>Published at the Proceedings of the 36th the Conference on Software Engineering Education and Training (CSEE&T'2024)   </em></strong><a href="./Preprint/CSEET24-preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://dl.acm.org/doi/abs/10.1145/3626252.3630787"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+      <p>Large Language Models (LLMs), like ChatGPT, have gained widespread popularity and usage in various software engineering tasks, including programming, testing, code review, and program comprehension. However, their effectiveness in improving software quality in the classroom remains uncertain. In this paper, we aim to shed light on our experience in teaching the use of ChatGPT to cultivate a bugfix culture and leverage LLMs to improve software quality in educational settings. This paper discusses the results of an experiment involving 102 submissions that carried out a code review activity of 1,230 rules. Our quantitative and qualitative analysis reveals that a set of PMD quality issues influences the acceptance or rejection of the issues, and design-related categories that take longer to resolve. While students acknowledge the potential of using ChatGPT during code review, some skepticism persists. Code review can become a vital part of the educational computing plan through this experiment. We envision our findings to enable educators to support students with code review strategies to raise students' awareness about LLM and promote software quality in education.</p>
+<p>The dataset utilized in this study is available for download <a href="./CSEET2024.html"  style="color:blue;">here.</a></p>
+    </div>
+  </div>
+<hr>
+
+	
+	
+</div>
+
+
+
+
+  
+<div class="container text-center">    
+  <h3></h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+    
+    </div>
+    <div class="col-sm-4"> 
+          
+    </div>
+
+  </div>
+</div><br>
 
 <footer class="container-fluid text-center">
   <p></p>
@@ -160,4 +258,5 @@ assignment.</div>
 <!-- Google Analytics -->
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
 </body>
+
 </html>

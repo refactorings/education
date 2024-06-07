@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Refactoring Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 3900px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="CSEET2024experiment.html">Experiment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+  <div class="row content">
+
+   <div class="col-sm-2 sidenav">
+     <h3></h3>
+     
+	<div>
+        <p></p>
+    </div>
+    </div>
+
+
+
+
+    <div class="col-sm-8 text-left">
+      <h1> Cultivating Software Quality Improvement in the Classroom: An Experience with ChatGPT</h1>
+      <hr>
+      <p>Large Language Models (LLMs), like ChatGPT, have gained widespread popularity and usage in various software engineering tasks, including programming, testing, code review, and program comprehension. However, their effectiveness in improving software quality in the classroom remains uncertain. In this paper, we aim to shed light on our experience in teaching the use of ChatGPT to cultivate a bugfix culture and leverage LLMs to improve software quality in educational settings. This paper discusses the results of an experiment involving 102 submissions that carried out a code review activity of 1,230 rules. Our quantitative and qualitative analysis reveals that a set of PMD quality issues influences the acceptance or rejection of the issues, and design-related categories that take longer to resolve. While students acknowledge the potential of using ChatGPT during code review, some skepticism persists. Code review can become a vital part of the educational computing plan through this experiment. We envision our findings to enable educators to support students with code review strategies to raise students' awareness about LLM and promote software quality in education.</p>
+</br>
+<div class="videos-container">
+                <h3 style="text-decoration: underline">Our recorded tutorial: How to use ChatGPT?</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dfAa4L7shtw?si=BLKKwECC2BFhnsY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</br>
+<div class="videos-container">
+                <h3 style="text-decoration: underline">Our recorded tutorial: How to use PMD?</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zxBXBoL4XB0?si=SSqx21sDPitc86pO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div></br>
+<hr>
+<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading"> PMD and ChatGPT in action showing the identified Excessive Method Length.</div>
+        <div class="panel-body"><img src="./Images/Approach.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">The list of open-source projects used in the
+assignment.</div>
+        <div class="panel-body"><img src="./Images/Project.png" class="img-responsive" style="width:95%" alt="Image"></div>
+        <div class="panel-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+</html>
